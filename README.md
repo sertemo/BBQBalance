@@ -1,5 +1,5 @@
 
-# BBQ BALANCE v 0.2.0
+# BBQ BALANCE v0.2.1
 # 🍔🌭🍗🍖🍺🌽🍉🍴🔥👨‍👩‍👧‍👦
 ## Aplicación tipo splitwise para equilibrar las cuentas cuando hagamos barbacoa en el grupo de padres del parque.
 Aplicación sencilla de una sola página con gráficos interactivos
