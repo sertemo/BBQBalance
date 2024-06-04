@@ -1,7 +1,7 @@
 import flet as ft
 from typing import Callable
 
-from some_func import CUADRILLA, LISTA_COLORES_AVATAR
+from src.bbqbalance.some_func import CUADRILLA, LISTA_COLORES_AVATAR
 
 COLOR_LETRA = '#41474c'
 

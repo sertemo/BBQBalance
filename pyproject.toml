@@ -4,6 +4,7 @@ version = "0.2.1"
 description = "Aplicación tipo Splitwise para hacer cuentas entre los padres y madres del parque cuando se hagan barbacoas"
 authors = ["SERGIO TEJEDOR MORENO <tejedor.moreno@gmail.com>"]
 readme = "README.md"
+packages = [{include = "bbqbalance", from = "src"}]
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.13"

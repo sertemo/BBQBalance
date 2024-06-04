@@ -1,5 +1,5 @@
 import flet as ft
-from some_func import (
+from src.bbqbalance.some_func import (
     lista_cuadrilla,
     get_color_async,
     Switch
@@ -9,12 +9,12 @@ from pathlib import Path
 import toml
 
 import asyncio
-from backend.balance import (
+from src.bbqbalance.balance import (
     Barbecue, 
     Transaction, 
     )
 
-from flet_models import (
+from src.bbqbalance.flet_models import (
     RotuloTexto,
     LineaParticipante,
 )
