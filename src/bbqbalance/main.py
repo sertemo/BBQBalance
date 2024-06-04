@@ -16,13 +16,22 @@
 
 import flet as ft
 
+# https://flet.dev/docs/tutorials/trello-clone
 
-class BBQApp(ft.UserControl):
-    def __init__(self):
-        super().__init__()
 
-    def build(self):
-        pass
+class BBQApp:
+    def __init__(self, page: ft.Page) -> None:
+        self.page = page
+        self.appbar = ft.AppBar(
+            leading=ft.Icon(ft.icons.GRID_GOLDENRATIO_ROUNDED),
+            leading_width=100,
+            title=ft.Text(f"BBQ Balance", font_family="Pacifico", size=32, text_align="start"),
+            center_title=False,
+            toolbar_height=75,
+            bgcolor=ft.colors.LIGHT_BLUE_ACCENT_700,
+        )
+        self.page.appbar = self.appbar
+        self.page.update()
 
 
 def main(page: ft.Page):
@@ -39,8 +48,9 @@ def main(page: ft.Page):
     page.theme = ft.Theme(font_family="Nunito")
     page.theme.page_transitions.windows = "cupertino"
     page.bgcolor = ft.colors.BLUE_GREY_200
-    app = BBQApp()
+    app = BBQApp(page)
     page.add(app)
+    page.update()
 
 
 if __name__ == "__main__":
